@@ -94,6 +94,13 @@ img {
     top: 0;
     left: 0;
     width: 100%;
+    transition: .2s linear;
+    padding-bottom: 20px;
+    z-index: 999;
+}
+
+.header_active {
+    background: #0e1d28;
 }
 
 .header__wrapper {
@@ -402,12 +409,6 @@ img {
     margin-bottom: 77px;
 }
 
-.tour {}
-
-.tour__pic {}
-
-.tour__thumb {}
-
 .tour__info {
     padding-left: 47px;
 }
@@ -449,8 +450,6 @@ img {
     margin-bottom: 86px;
 }
 
-.wrapper-full {}
-
 .top__title {
     margin-bottom: 54px;
 }
@@ -464,15 +463,13 @@ img {
 .top__card {
     display: flex;
     flex-direction: column;
-
+    cursor: pointer;
 }
 
 .top__card-pic {
     position: relative;
     margin-bottom: 45px;
 }
-
-.top__card-thumb {}
 
 .top__card-stats {
     display: flex;
@@ -504,8 +501,6 @@ img {
     margin-right: 14px;
 }
 
-.top__card-likes-value {}
-
 .top__card-comments {
     font-weight: 500;
     font-size: 18px;
@@ -532,9 +527,76 @@ img {
     font-size: 16px;
     margin: auto 0 0 0;
 }
-.top__card-more:hover, .top__card-more:focus, .top__card-more:active{
+
+.top__card-more:hover,
+.top__card-more:focus,
+.top__card-more:active {
     background: #1a4266;
 }
-.top__card-comments-value {}
 
 /* Top styles end */
+/* Videos styles start */
+.videos {
+    width: 100%;
+}
+
+.videos__wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.video__item {
+    padding-top: 56.25%;
+}
+
+.video__element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Videos styles end */
+/* Footer styles start */
+.footer {
+    background: #0e1d28;
+    padding: 119px 0;
+}
+
+.footer__item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__logo {
+    width: 50%;
+}
+
+.footer__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.footer__menu-item-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.footer__menu-link {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+.footer__menu-link:hover, .footer__menu-link:focus, .footer__menu-link:active{
+    opacity: .75;
+}
+/* Footer styles end */
